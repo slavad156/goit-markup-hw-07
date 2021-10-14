@@ -459,12 +459,7 @@ img {
 
 /* What are we doing */
 
-.we-doing {
-  display: flex;
-  justify-content: space-between;
-}
-
-.working-direction {
+.working__title {
   margin-bottom: 50px;
 
   color: var(--secondary-color-text);
@@ -474,11 +469,16 @@ img {
   text-align: center;
 }
 
-.work-thumb {
+.working__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.working__thumb {
   position: relative;
 }
 
-.work-text {
+.working__text {
   position: absolute;
   bottom: 0;
   left: 0;
