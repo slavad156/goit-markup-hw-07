@@ -500,16 +500,15 @@ img {
 
 /* Team */
 .team {
+  background-color: var(--secondary-background-color);
+}
+
+.team__list {
   display: flex;
   justify-content: space-between;
 }
 
-.our-team {
-  /* min-width: 1600px; */
-  background-color: var(--secondary-background-color);
-}
-
-.team-title {
+.team__title {
   margin-bottom: 50px;
 
   color: var(--secondary-color-text);
@@ -519,7 +518,20 @@ img {
   text-align: center;
 }
 
-.team-name {
+.team__card-person {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+}
+
+.person {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--white-color);
+}
+
+.person__name {
   margin-bottom: 10px;
 
   color: var(--secondary-color-text);
@@ -530,7 +542,7 @@ img {
   text-align: center;
 }
 
-.team-speciality {
+.person__speciality {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -538,27 +550,17 @@ img {
   margin-bottom: 16px;
 }
 
-/* .team-social .list {
-  display: flex;
-} */
-
-.team-icon {
-  fill: #afb1b8;
-
-  transition: fill 250ms var(--time-animation);
-}
-
-.team-list .item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.team-list {
+.person__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.link-team {
+.person__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.person__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,27 +572,19 @@ img {
   transition: background-color 250ms var(--time-animation);
 }
 
-.link-team:hover,
-.link-team:focus {
+.person__link:hover,
+.person__link:focus {
   background-color: var(--accent);
 }
 
-.link-team:hover .team-icon,
-.link-team:focus .team-icon {
+.person__icon {
+  fill: #afb1b8;
+  transition: fill 250ms var(--time-animation);
+}
+
+.person__link:hover .person__icon,
+.person__link:focus .person__icon {
   fill: var(--white-color);
-}
-
-.card-person-content {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: var(--white-color);
-}
-
-.card-person {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  overflow: hidden;
 }
 
 /* clients */
