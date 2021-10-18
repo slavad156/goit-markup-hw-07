@@ -10,7 +10,13 @@
 
 .working__list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.working__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 
 .working__thumb {

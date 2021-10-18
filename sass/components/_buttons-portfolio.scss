@@ -4,8 +4,10 @@
   margin-bottom: 50px;
 }
 
-.buttons-portfolio__item:not(:last-child) {
-  margin-right: 8px;
+.buttons-portfolio__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .buttons-portfolio__filter {
